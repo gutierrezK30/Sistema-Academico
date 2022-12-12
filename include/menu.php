@@ -1,7 +1,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>SISTEMA ACADEMICO!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>SISTEMA ACADEMICO</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -19,8 +19,8 @@
                 <img src="imagen/logo.png" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
-                <span>Bien Venido,</span>
-                <h2>Gutierrez Gonzales Katia</h2>
+              <span>Bienvenido,</span>
+                <h2><?php echo $res_b_d_s['apellidos_nombres']; ?></h2>  
               </div>
             </div>
 
