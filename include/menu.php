@@ -10,15 +10,20 @@
             $res_b_u_s = mysqli_fetch_array($buscar_docente_sesion);
              ?>
             <!-- menu profile quick info -->
+
+
+
+            <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="Gentella/production/images/img.jpg" alt="..." class="img-circle profile_img">
+                <img src="./imagen/logo.png" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
-                <span>Welcome,</span>
-                <h2><?php echo $res_b_u_s['apellidos_nombres']; ?></h2>
+                <span>Bien Venido,</span>
+                <h2>Gutierrez Gonzales Katia</h2>
               </div>
             </div>
+
             <!-- /menu profile quick info -->
 
             <br />
