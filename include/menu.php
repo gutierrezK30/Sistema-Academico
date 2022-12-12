@@ -16,7 +16,7 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <img src="./imagen/logo.png" alt="..." class="img-circle profile_img">
+                <img src="imagen/logo.png" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Bien Venido,</span>
