@@ -20,7 +20,7 @@
               </div>
               <div class="profile_info">
               <span>Bienvenido,</span>
-                <h2><?php echo $res_b_d_s['apellidos_nombres']; ?></h2>  
+                <h2>Gutierrez Gonzales Katia</h2>  
               </div>
             </div>
 
