@@ -41,10 +41,10 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Condicion</h2>
+                    <h2>Relacion de cargo</h2>
                     <ul class="nav navbar-right">
                       <li>
-                        <a href="condiciones.php" class="btn btn-success">Agregar Nuevo</a>
+                        <a href="condicion.php" class="btn btn-success">Agregar Nuevo</a>
                       </li>
                     </ul>
                     <div class="clearfix"></div>
@@ -55,21 +55,24 @@ include "include/verificar_sesion.php";
                       <thead>
                         <tr>
                           <th>Id</th>
-                          <th>Condicion</th>
+                          <th>descripcion</th>
+                          <th>codigo</th>
                           <th>Acciones</th>
+                          
                         </tr>
                       </thead>
                       <tbody>
                         <?php 
-                        $b_condicion = buscarcondicion($conexion);
+                        $b_condicion = buscarCondicion($conexion);
                         while ($res_b_condicion = mysqli_fetch_array($b_condicion)) {
                         ?>
                         <tr>
                           <td><?php echo $res_b_condicion['id']; ?></td>
-                          <td><?php echo $res_b_condicion['condicion']; ?></td>
+                          <td><?php echo $res_b_condicion['descripcion']; ?></td>
+                          <td><?php echo $res_b_condicion['codigo']; ?></td>
                           <td>
-                            <a href="editar_condicion.php?id=<?php echo $res_b_condicion['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_condicion.php?id=<?php echo $res_b_condicion['condicion']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="editar_docente.php?id=<?php echo $res_b_cargo['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="operaciones/eliminar_cargo.php?id=<?php echo $res_b_cargo['descripcion']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php
@@ -129,12 +132,12 @@ include "include/verificar_sesion.php";
     $('#example').DataTable({
       "language":{
     "processing": "Procesando...",
-    "lengthMenu": "Mostrar _MENU_ registros",
+    "lengthMenu": "Mostrar MENU registros",
     "zeroRecords": "No se encontraron resultados",
     "emptyTable": "Ningún dato disponible en esta tabla",
-    "sInfo": "Mostrando del _START_ al _END_ de un total de _TOTAL_ registros",
+    "sInfo": "Mostrando del START al END de un total de TOTAL registros",
     "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
-    "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+    "infoFiltered": "(filtrado de un total de MAX registros)",
     "search": "Buscar:",
     "infoThousands": ",",
     "loadingRecords": "Cargando...",
