@@ -54,9 +54,9 @@ include "include/verificar_sesion.php";
                     <table id="example" class="table table-striped table-bordered">
                       <thead>
                         <tr>
-                          <th>Id</th>
+                          <th>ID</th>
                           <th>DESCRIPCIÓN</th>
-                          <th>Acciones</th>
+                          <th>ACCIONES</th>
                         </tr>
                       </thead>
                       <tbody>

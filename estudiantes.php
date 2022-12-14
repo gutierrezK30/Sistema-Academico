@@ -41,7 +41,7 @@ include "include/verificar_sesion.php";
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Relacion de Estudiantes</h2>
+                    <h2>RELACION DE ESTUDIANTES</h2>
                     <ul class="nav navbar-right">
                       <li>
                         <a href="estudiante.php" class="btn btn-success">Agregar Nuevo</a>
@@ -54,13 +54,13 @@ include "include/verificar_sesion.php";
                     <table id="example" class="table table-striped table-bordered">
                       <thead>
                         <tr>
-                          <th>Id</th>
+                          <th>ID</th>
                           <th>DNI</th>
                           <th>APELLIDOS Y NOMBRES</th>
                           <th>DIRECCION</th>
                           <th>CARRERA</th>
                           <th>SEMESTRE</th>
-                          <th>Acciones</th>
+                          <th>ACIONES</th>
                         </tr>
                       </thead>
                       <tbody>

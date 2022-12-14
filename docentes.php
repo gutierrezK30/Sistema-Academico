@@ -60,12 +60,12 @@ include "include/verificar_sesion.php";
                           <th>DIRECCION</th>
                           <th>CARRERA</th>
                           <th>SEMESTRE</th>
-                          <th>Acciones</th>
+                          <th>ACCIONES</th>
                         </tr>
                       </thead>
                       <tbody>
                         <?php 
-                        $b_docentes = buscarEstudiantes($conexion);
+                        $b_docentes = buscarDocentes($conexion);
                         while ($res_b_docentes = mysqli_fetch_array($b_docentes)) {
                         ?>
                         <tr>
@@ -76,8 +76,8 @@ include "include/verificar_sesion.php";
                           <td><?php echo $res_b_docentes['id_programa_estudios']; ?></td>
                           <td><?php echo $res_b_docentes['id_semestre']; ?></td>
                           <td>
-                            <a href="editar_estudiante.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-primary">Editar</a>
-                            <a href="operaciones/eliminar_estudiante.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-danger">Eliminar</a>
+                            <a href="editar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-primary">Editar</a>
+                            <a href="operaciones/eliminar_docente.php?id=<?php echo $res_b_docentes['id']; ?>" class="btn btn-danger">Eliminar</a>
                           </td>
                         </tr>
                         <?php
